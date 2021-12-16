@@ -12,4 +12,7 @@ class SalesHeadController {
     def show(){
         render(salesHeadService.show(params) as JSON)
     }
+    def getSalesHead(){
+        render(salesHeadService.show(params) as JSON)
+    }
 }

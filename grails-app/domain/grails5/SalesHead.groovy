@@ -10,7 +10,10 @@ class SalesHead {
     String city
     String district
     String address
+    Double shippingCost
     boolean isDelete=false
+
+    static hasMany = [items: SalesItem]
 
     static mapping = {
         version false

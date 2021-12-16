@@ -7,6 +7,7 @@ class StockMovementService {
 
     Map show(Map params){
         List data = StockMovement.executeQuery("SELECT new Map(material.matCode as mat_Code, " +
+                " sm.id as id, "+
                 " material.name as material_name, " +
                 " sm.enteredQuantity as entered_Quantity, " +
                 " sm.description as description, " +
