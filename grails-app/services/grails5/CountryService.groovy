@@ -6,7 +6,6 @@ import grails.gorm.transactions.Transactional
 class CountryService {
 
     Map show(Map params) {
-        println params
         Map response
         if(params.id){
             Country country = Country.read(params.id?.toLong())
