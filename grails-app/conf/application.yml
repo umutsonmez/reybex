@@ -89,7 +89,7 @@ environments:
     development:
         dataSource:
             dbCreate: none
-            logSql: true
+            logSql: false
     test:
         dataSource:
             dbCreate: none
