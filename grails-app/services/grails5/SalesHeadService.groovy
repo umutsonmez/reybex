@@ -19,10 +19,10 @@ class SalesHeadService {
                         [id: it.id,
                          material: [id: it.material.id, matCode: it.material.matCode,name:it.material.name],
                          taxAmount: it.taxAmount,
-                        quantity:it.quantity,
-                        netPrice:it.netPrice,
-                        taxRate:it.taxRate,
-                                totalAmount:it.totalAmount
+                         quantity:it.quantity,
+                         netPrice:it.netPrice,
+                         taxRate:it.taxRate,
+                         totalAmount:it.totalAmount
                         ]
                     }]]
         } else {

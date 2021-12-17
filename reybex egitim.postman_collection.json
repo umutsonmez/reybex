@@ -577,6 +577,134 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "lookup warehouse",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"lookup warehouse çalıştı\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/lookup/warehouse",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lookup",
+						"warehouse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lookup country",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"lookup country çalıştı\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/lookup/country",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lookup",
+						"country"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lookup customer",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"lookup customer çalıştı\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/lookup/customer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lookup",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lookup material",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"lookup material çalıştı\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/lookup/material",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"lookup",
+						"material"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

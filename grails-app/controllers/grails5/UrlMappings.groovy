@@ -16,7 +16,7 @@ class UrlMappings {
         "/customer/$id?" (controller: "customer"){ action = [GET:"show", POST:"save", DELETE:"remove"] }
         "/material/$id?" (controller: "material"){ action = [GET:"show", POST:"save", DELETE:"remove"] }
         "/salesHead/$id?" (controller: "salesHead"){ action = [GET:"show", POST:"save", DELETE:"remove"] }
-        "/getSalesHead" (controller: "salesHead"){ action = [GET:"getSalesHead"] }
+        "/lookup/$domainName?" (controller: "lookup"){ action = [GET:"show", POST:"save", DELETE:"remove"] }
         "/"(controller: 'application', action:'index')
         "500"(view: '/error')
         "404"(view: '/notFound')
