@@ -10,7 +10,7 @@ class SalesHead {
     String city
     String district
     String address
-    Double shippingCost
+    Double shippingCost = 0
     boolean isDelete=false
 
     static hasMany = [items: SalesItem]
@@ -20,5 +20,13 @@ class SalesHead {
     }
     static constraints = {
         district nullable: true
+        docDate nullable: true
+        docNumber nullable: true
+        customer nullable: true
+        orderEmail nullable: true
+        city nullable: true
+        address nullable: true
+        shippingCost nullable: true
+
     }
 }

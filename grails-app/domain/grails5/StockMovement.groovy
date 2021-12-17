@@ -12,13 +12,13 @@ class StockMovement {
     boolean isCancelled=false
     String description
     Date dateCreated
+    SalesItem salesItem
 
     static mapping = {
         version false
     }
 
     static constraints = {
-
 
         beforeQuantity nullable: true
         afterQuantity nullable: true

@@ -1,13 +1,12 @@
 package grails5
 
-import org.grails.datastore.mapping.query.Query
-
 class SalesItem {
 
     Integer id
     SalesHead salesHead
     Material material
     Integer quantity
+    Warehouse warehouse
     Double netPrice
     Double taxRate
     Double taxAmount

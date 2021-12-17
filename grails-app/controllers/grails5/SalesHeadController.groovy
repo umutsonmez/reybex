@@ -15,4 +15,7 @@ class SalesHeadController {
     def getSalesHead(){
         render(salesHeadService.show(params) as JSON)
     }
+    def save(){
+        render(salesHeadService.save(request.JSON)as JSON)
+    }
 }
